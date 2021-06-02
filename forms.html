@@ -67,6 +67,22 @@
     </form>
 
 
+    <form name="questionForm" onsubmit="return validateForm()" action="" method="get">
+        <h2>my form</h2>
+        <div class="row">
+            <label>What is your favorite flavor of ice cream?</label>
+            <br>
+            <input type="text" minlength="2" maxlength="20" name="iceCream">
+            <!--where errors will be displayed-->
+            <br>
+            <div class="row">
+                <input type="submit" value="submit">
+            </div>
+        </div>
+
+    </form>
+
+
     <script src="forms.js"></script>
 </body>
 

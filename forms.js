@@ -112,3 +112,11 @@ function validateForm() {
 
 };
 
+
+function validateForm() {
+    //retrieveing the values of form elements
+    // the name of the form in html is questionForm
+
+    const iceCream = document.questionForm.iceCream.value;
+}
+
