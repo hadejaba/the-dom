@@ -35,3 +35,21 @@ function functionThree() {
 // add two html attributes for user input and two pseudo classes
 // the data should store in the url
 // slack april the finished form
+
+
+
+function makeMadLib() {
+    let storyDiv = document.getElementById("story");
+    let person = document.getElementById("person").value;
+    let adjective = document.getElementById("adjective").value;
+    let noun = document.getElementById("noun").value;
+    // storyDiv.innerHTML = person + " married a " + adjective + " " + noun + "... So weird!";
+    storyDiv.innerHTML = (`${person} married a ${adjective} ${noun} ...idk about that.`);
+}
+
+let libButton = document.getElementById('lib-button');
+libButton.addEventListener('click', makeMadLib);
+
+document.getElementById("story").style.color = "orange";
+document.getElementById("story").style.fontSize = "40px";
+document.getElementById("story").style.fontFamily = "arial";
